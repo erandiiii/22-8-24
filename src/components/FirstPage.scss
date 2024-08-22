@@ -1,0 +1,195 @@
+.fp-container {
+    background-image: url(https://modelkos.com/static/media/bnn.3ac994f721e0d732339c.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+ 
+
+
+    .left-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%;
+        padding: 12% 5%;
+
+        .heading-div {
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+
+            // align-items: center;
+            // justify-content: center;
+            .first-heading {
+                margin-bottom: 0.5rem;
+            }
+
+            .second-heading {
+                margin-top: 1rem;
+            }
+
+        }
+
+        .input-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+
+            .input-holder {
+                display: flex;
+                border: 1px solid white;
+                align-items: center;
+                gap: 1rem;
+                height: 1.5rem;
+                padding: 1rem;
+                cursor: pointer;
+
+                .input-icon {
+                    background-color: white;
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                    svg {
+                        margin-top: 0.2rem;
+                        margin-left: 0.2rem;
+                    }
+                }
+
+                input {
+                    width: 12rem;
+                    text-decoration: none;
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                }
+
+                .input-arrow {
+                    svg {
+                        font-size: 2rem;
+                        color: white;
+
+                    }
+                }
+
+            }
+
+            .input-holder2 {
+                display: flex;
+                border: 1px solid white;
+                align-items: center;
+                height: 1.5rem;
+                padding: 1rem;
+                cursor: pointer;
+
+                 #inputi {
+                    width: 12rem;
+                    text-decoration: none;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 15px;
+                    line-height: 1rem;
+
+                }
+
+                .input-icon2 {
+                    color: white;
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                    svg {
+                        margin-top: -0.2rem;
+                        margin-left: -0.5rem;
+                        font-size: 1.8rem;
+                    }
+
+                }
+
+                .input-arrow2 {
+                    svg {
+                        font-size: 2rem;
+                        color: white;
+
+                    }
+                }
+            }
+
+
+            button {
+                width: 10rem;
+                height: 3.8rem;
+                border: 1PX solid black;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right-div {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        margin-right: 5rem;
+        height: 25rem;
+
+        position: relative;
+
+        .imgja {
+            position: absolute;
+            height: 25rem;
+
+        }
+    }
+
+    .imgja2 {
+        position: absolute;
+        height: 25rem;
+        top: 5rem;
+        left: 12rem;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease;
+        transform: rotate(40deg);
+
+    }
+
+    .imgja2:hover {
+        transform: none;
+    }
+
+    .curved-txt {
+        position: absolute;
+        bottom: 4rem;
+        text-align: center;
+        right: 17rem;
+        height: 40rem;
+        z-index: 10;
+        color: white;
+        transition: transform 0.3s ease;
+        transform-origin: center;
+    }
+
+    .curved-txt:hover {
+        transform: rotate(360deg);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

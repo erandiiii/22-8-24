@@ -1,0 +1,45 @@
+.mobilenav-container{
+    display: none;
+    width: 50%;
+    left: 0;
+    top: 2;
+    .mobilenav-logo{
+
+        .logo-container{
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between !important;
+                text-decoration: none;
+
+                color: white;
+
+                .logo-container {
+                    background: white;
+                    transform: rotate(45deg);
+                    margin: 0 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    text-align: center;
+                }
+
+                svg {
+                    color: black;
+                    transform: rotate(315deg);
+                    text-align: center;
+                    margin-right: 0.1.5rem;
+                    margin-top: 0.1rem;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .mobilenav-links{
+        display: flex;
+        flex-direction: column;
+    }
+}
