@@ -1,17 +1,21 @@
 import React from 'react'
 import FirstPage from './FirstPage'
 import MobileNav from './MobileNav'
+import SecondPage from './SecondPage'
 
 const Home = () => {
   return (
-    
-      
+
+
     <>
-    {/* <MobileNav/> */}
-     <FirstPage/>
+
+      <FirstPage />
+      <SecondPage/>
+     
+
     </>
-   
-    
+
+
   )
 }
 

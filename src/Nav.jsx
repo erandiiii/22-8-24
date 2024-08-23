@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom'
 import { IoMdArrowDropright } from 'react-icons/io'
 import { useState } from 'react'
 import NavMegamenu from './components/NavMegamenu'
+import MobileNav from './components/MobileNav'
 
 const Nav = () => {
 
     const [menuOpen, setMenuOpen]= useState(false);
-  
+    const [menuOpen1, setMenuOpen1]= useState(false);
+    
+    
    
     return (
         <div className='nav'>
@@ -22,19 +25,23 @@ const Nav = () => {
                     </Link>
                 </div>
                 <div className='menu' onClick={()=>{
-                setMenuOpen(!menuOpen);
-                
-                 }}>
+                    setMenuOpen(!menuOpen)
+                    setMenuOpen1(!menuOpen1)
+                    
+               
+                }}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-                
+            
+                <div id='mb-nav' className={menuOpen1 ? "open" : ""}><MobileNav/></div>
                 <div id='nav-menu' className={menuOpen ? "open" : ""}>
                     <div className="nav-link">
                         <Link to='/'>
                             Home
                         </Link>
+                        
                     </div>
                     <div className="nav-link">
                         <Link to='/'>
@@ -77,6 +84,7 @@ const Nav = () => {
                     </div>
                 </div>
             </div>
+           
         </div>
     )
 }

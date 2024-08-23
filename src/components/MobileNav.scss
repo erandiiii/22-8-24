@@ -1,45 +1,109 @@
-.mobilenav-container{
-    display: none;
-    width: 50%;
-    left: 0;
-    top: 2;
-    .mobilenav-logo{
 
-        .logo-container{
+.mobile-nav {
+    position: sticky;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+    padding: 1rem 1rem;
+    z-index: 9999;
+    // border: 1px solid black;
+    button{
+        
+    }
+   
+   
+
+    .mobilenav-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .button-div{
+            width: 3rem;
+            height: 3rem;
+            justify-content: center;
+        }
+        button{
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            font-size: 3rem;
+            background-color: transparent;
+            border: none;
+        }
+
+        a {
             display: flex;
+            justify-content: center;
             align-items: center;
-            margin-left: 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            color: black;
+            margin:1rem 0;
 
-            a {
+            .logo-container {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                justify-content: space-between !important;
-                text-decoration: none;
+                transform: rotate(315deg);
+                background-color: black;
+                width: 2rem;
+                height: 2rem;
+                margin: 1rem;
 
+            }
+
+            svg {
                 color: white;
+                transform: rotate(45deg);
+                text-align: center;
+                margin-right: 0.2.2rem;
+                margin-top: 0.2.2rem;
+                font-size: 28px;
+            }
 
-                .logo-container {
-                    background: white;
-                    transform: rotate(45deg);
-                    margin: 0 1rem;
-                    width: 2rem;
-                    height: 2rem;
-                    text-align: center;
-                }
+        }
+    }
 
-                svg {
-                    color: black;
-                    transform: rotate(315deg);
-                    text-align: center;
-                    margin-right: 0.1.5rem;
-                    margin-top: 0.1rem;
-                    font-size: 28px;
+    .mobilenav-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        gap: 3rem;
+        // border: 1px solid black;
+        .contacts-div{
+            
+        }
+       
+
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+            // margin: 0 1rem;
+            
+        }
+    }
+
+    .mobilenav-auth{
+        margin: 10rem 0;
+        width: 100%;
+        .auths-links{
+            display: flex;
+            flex-wrap: wrap;
+            // flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .aut-link{
+                // width: 35%;
+                text-align: center;
+                a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
                 }
             }
         }
-    }
-    .mobilenav-links{
-        display: flex;
-        flex-direction: column;
     }
 }
