@@ -150,11 +150,11 @@
 @media(max-width:900px) {
     .second-page {
         .sp-container {
-            margin-right: 5rem;
+           
             .sp-right {
                 position: static;
                 display: flex;
-                margin-right: 21rem !important;
+                
                 gap: 1rem;
                 margin-right: 5rem;
                 flex-direction: row !important;
@@ -182,24 +182,41 @@
 @media(max-width:780px) {
     .second-page {
         .sp-container {
-            // margin-left: 4rem;
+            margin-left: 4rem;
             .sp-right {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                justify-content: space-around;
-                margin-left: 10rem;
+                // justify-content: space-around;
+                margin-left: 5rem;  
             }
 
         }
     }
 }
 
-@media(max-width:600px) {
+@media(max-width:500px) {
     .second-page {
         .sp-container {
+            .sp-left{
+                margin-left: 2rem;
+            }
             .sp-right {
-                margin-left: 3rem;
+              margin-right: 12rem;
+            }
+
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .second-page {
+        .sp-container {
+            .sp-left{
+                margin-left: 2rem;
+            }
+            .sp-right {
+              margin-right: 14rem;
             }
 
         }
