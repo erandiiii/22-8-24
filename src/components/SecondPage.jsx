@@ -21,7 +21,9 @@ const SecondPage = () => {
             <div className='sp-right'>
                
                 <div className="first-card">
-                    <div className='first-image' style={{ content: `url(${image3})` }}></div>
+                    <div className='first-image' style={{ content: `url(${image3})`, 
+                    width:'90%'
+                }}></div>
                     <div className="first-info">
                     <h2>DEA GASHI</h2>
                     <ul>
@@ -33,7 +35,8 @@ const SecondPage = () => {
                     </div>
                 </div>
                 <div className="second-card">
-                <div className='second-image' style={{ content: `url(${image4})` }}></div>
+                <div className='second-image' style={{ content: `url(${image4})`,
+             width:'90%' }}></div>
                 <div className="second-info">
                     <h2>DEA GASHI</h2>
                     <ul>

@@ -2,6 +2,7 @@ import React from 'react'
 import FirstPage from './FirstPage'
 import MobileNav from './MobileNav'
 import SecondPage from './SecondPage'
+import Mop from './Mop'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
 
       <FirstPage />
       <SecondPage/>
+      <Mop/>
      
 
     </>

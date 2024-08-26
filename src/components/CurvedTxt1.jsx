@@ -6,10 +6,10 @@ import { IoLogoMedium } from 'react-icons/io5';
 
 const CurvedTxt1 = () => {
   return (
-    <svg className='curved-txt' width={600} height={600} viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <svg className='curved-txt' width={300} height={300} viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
     <ReactCurvedText
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         cx={150}
         cy={150}
         rx={100}
@@ -30,11 +30,11 @@ const CurvedTxt1 = () => {
         
     />
     <FaArrowRightLong className='cruved-arrow'
-        x={145}
-        y={145}
+        x={138}
+        y={138}
         height={150}
         width={120}
-        fontSize={15}
+        fontSize={30}
         color='white'
        
     />

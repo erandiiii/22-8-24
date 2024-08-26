@@ -2,23 +2,36 @@
     background-image: url(https://modelkos.com/static/media/bnn.3ac994f721e0d732339c.png);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
-    
- 
+    justify-content: space-between;
+    position: relative;
+    // flex-direction: row;
+
+    .background {
+        background-color: #000;
+        opacity: 0.55;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+
 
 
     .left-div {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         width: 60%;
         padding: 12% 5%;
+        z-index: 10;
 
         .heading-div {
             display: flex;
@@ -29,10 +42,14 @@
             // justify-content: center;
             .first-heading {
                 margin-bottom: 0.5rem;
+                color: white;
             }
 
             .second-heading {
                 margin-top: 1rem;
+                color: white;
+                text-align: center;
+
             }
 
         }
@@ -90,14 +107,14 @@
                 padding: 1rem;
                 cursor: pointer;
 
-                 #inputi {
+                #inputi {
                     width: 12rem;
                     text-decoration: none;
                     background-color: transparent;
                     border: none;
                     font-size: 15px;
                     line-height: 1rem;
-                   
+
                     outline: none;
 
                 }
@@ -136,16 +153,17 @@
     }
 
     .right-div {
-        width: 35%;
-        display: flex;
-        flex-direction: row;
-        margin-right: 5rem;
-        height: 25rem;
-
+        width: 30%;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 6rem;
+        z-index: 10;
+        // margin-left: -1rem;
 
         .imgja {
-            position: absolute;
+            // position: absolute;
             height: 25rem;
 
         }
@@ -154,8 +172,8 @@
     .imgja2 {
         position: absolute;
         height: 25rem;
-        top: 5rem;
-        left: 12rem;
+        top: 7rem;
+        left: 10rem;
         background-size: cover;
         background-position: center;
         transition: transform 0.5s ease;
@@ -164,14 +182,15 @@
     }
 
     .imgja2:hover {
-        transform: none;
+        transform: scale(1.1);
+        
     }
 
     .curved-txt {
         position: absolute;
         bottom: 4rem;
         text-align: center;
-        right: 17rem;
+        right: 10rem;
         height: 40rem;
         z-index: 10;
         color: white;
@@ -182,17 +201,164 @@
     .curved-txt:hover {
         transform: rotate(360deg);
     }
+}
 
+@media(max-width:1900px) {
+    .fp-container {
+        .right-div {
+            .image-holder2 {
+                .imgja2 {
+                    left: 22rem;
+                }
+            }
+        }
+    }
+}
 
+@media(max-width:1700px) {
+    .fp-container {
+        .right-div {
+            .image-holder2 {
+                .imgja2 {
+                    left: 20rem;
+                }
+            }
+        }
+    }
+}
 
+@media(max-width:1500px) {
+    .fp-container {
+        .right-div {
+            .image-holder2 {
+                .imgja2 {
+                    left: 15rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width:1300px) {
+    .fp-container {
+        .right-div {
+            .image-holder2 {
+               
+                .imgja2 {
+                    left: 8rem;
+                    height: 20rem;
+                }
+            }
+            .image-holder{
+                .imgja{
+                    height: 20rem;
+                }
+            }
+        }
+    }
+}
 
+@media(max-width:1200px) {
+    .fp-container {
+        .right-div {
+            .image-holder2 {
+                .imgja2 {
+                    left: 10 rem;
+                }
+            }
+        }
+    }
+}
 
+@media(max-width:900px) {
+    .fp-container {
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
+        .left-div {
+            width: 90%;
+            flex-wrap: wrap;
+            align-items: center;
 
+            .input-div {
+                width: 100%;
+                display: flex;
 
+                justify-content: center;
 
+            }
+        }
 
+        .right-div {
+            width: 48%;
+            position: static;
+            justify-content: center;
 
+            .imgja {
+                margin: 0 1rem;
+                height: 20rem;
+            }
 
+            .imgja2 {
+                position: static;
+                margin: 0 1rem;
+                transform: none;
+                height: 20rem;
+            }
+
+            .curved-txt {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .fp-container {
+        .left-div {
+            .input-div {
+                display: flex;
+                flex-wrap: wrap;
+
+                .input-holder {
+                    width: 90%;
+                    display: flex !important;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .input-holder2 {
+                    width: 90%;
+                    display: flex !important;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                button {
+                    width: 90%;
+                }
+            }
+        }
+
+        .right-div {
+            display: flex;
+            width: 80%;
+            flex-wrap: wrap;
+            align-items: center !important;
+            justify-content: center !important;
+
+            .imgja {
+                height: 18rem;
+                margin: 1rem 0;
+
+            }
+
+            .imgja2 {
+                height: 18rem;
+                margin: 1rem 0;
+            }
+        }
+    }
 }
